@@ -73,12 +73,12 @@ p {
   box-sizing: border-box;
 }
 
-.logo-container {
+#logo-container {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.logo {
+#logo {
   max-width: 100%;
   height: auto;
   display: block;
