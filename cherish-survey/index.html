@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHERISH - Your Advantage - Engagement Survey </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts - Roboto for headings and Open Sans for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img id="logo" src="assets/images/logo.png" alt="Cherish Logo">
+            </div>
+            <h1>Team Role & Growth Survey</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <form id="survey-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <!-- Section 1: Your Expectations -->
+            <section class="survey-section" id="expectations">
+                <div class="section-header">
+                    <img src="assets/images/heart-icon.png" alt="Cherish Heart Icon" class="heart-icon"> 
+                    <h2>Your Expectations</h2>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">What do you hope to gain from working on Cherish?</label>
+                    <p class="instructions">(Select all that apply and highlight the top 3 in order of importance)</p>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gain-experience" name="gain[]" value="Real-world project experience">
+                            <label for="gain-experience">Real-world project experience</label>
+                            <select name="gain_priority[]" class="priority-select" aria-label="Priority for Real-world project experience">
+                                <option value="">Priority</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gain-resume" name="gain[]" value="Resume-worthy achievements">
+                            <label for="gain-resume">Resume-worthy achievements</label>
+                            <select name="gain_priority[]" class="priority-select" aria-label="Priority for Resume-worthy achievements">
+                                <option value="">Priority</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gain-impact" name="gain[]" value="Impact on vulnerable communities">
+                            <label for="gain-impact">Impact on vulnerable communities</label>
+                            <select name="gain_priority[]" class="priority-select" aria-label="Priority for Impact on vulnerable communities">
+                                <option value="">Priority</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gain-skill" name="gain[]" value="Skill development">
+                            <label for="gain-skill">Skill development</label>
+                            <select name="gain_priority[]" class="priority-select" aria-label="Priority for Skill development">
+                                <option value="">Priority</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gain-mentorship" name="gain[]" value="Mentorship/networking">
+                            <label for="gain-mentorship">Mentorship/networking</label>
+                            <select name="gain_priority[]" class="priority-select" aria-label="Priority for Mentorship/networking">
+                                <option value="">Priority</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gain-entrepreneurial" name="gain[]" value="Entrepreneurial learning">
+                            <label for="gain-entrepreneurial">Entrepreneurial learning</label>
+                            <select name="gain_priority[]" class="priority-select" aria-label="Priority for Entrepreneurial learning">
+                                <option value="">Priority</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gain-remuneration" name="gain[]" value="Future remuneration ($)">
+                            <label for="gain-remuneration">Future remuneration ($)</label>
+                            <select name="gain_priority[]" class="priority-select" aria-label="Priority for Future remuneration">
+                                <option value="">Priority</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="gain-other" class="form-label">Other:</label>
+                    <input type="text" id="gain-other" name="gain_other" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="ideal-title" class="form-label">What title or role would you ideally list on your resume from this experience?</label>
+                    <p class="instructions">(e.g., Business Development Coordinator, Accessibility Analyst, Project Manager, etc.)</p>
+                    <input type="text" id="ideal-title" name="ideal_title" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="accomplishments" class="form-label">What are the accomplishments you'd love to highlight on your resume from this experience?</label>
+                    <textarea id="accomplishments" name="accomplishments" class="form-control" rows="4"></textarea>
+                </div>
+            </section>
+
+            <!-- Section 2: Functional Confidence & Autonomy -->
+            <section class="survey-section" id="confidence">
+                <div class="section-header">
+                    <img src="assets/images/heart-icon.png" alt="Cherish Heart Icon" class="heart-icon">
+                    <h2>Functional Confidence & Autonomy</h2>
+                </div>
+
+                <p class="instructions">For each function below, rate your current level of confidence and ability to work independently (1 = not at all, 5 = expert / no supervision needed)</p>
+
+                <!-- Business Strategy & Planning -->
+                <div class="category-section">
+                    <h3>📊 Business Strategy & Planning</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Understanding social enterprise models:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="social-enterprise-rating">
+                            <span id="social-enterprise-rating" class="sr-only">Rate your understanding of social enterprise models from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="social-enterprise-1" name="social_enterprise" value="1" required>
+                                <label for="social-enterprise-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-enterprise-2" name="social_enterprise" value="2">
+                                <label for="social-enterprise-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-enterprise-3" name="social_enterprise" value="3">
+                                <label for="social-enterprise-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-enterprise-4" name="social_enterprise" value="4">
+                                <label for="social-enterprise-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-enterprise-5" name="social_enterprise" value="5">
+                                <label for="social-enterprise-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Working with business canvases and strategy documents:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="business-canvases-rating">
+                            <span id="business-canvases-rating" class="sr-only">Rate your ability to work with business canvases from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="business-canvases-1" name="business_canvases" value="1" required>
+                                <label for="business-canvases-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="business-canvases-2" name="business_canvases" value="2">
+                                <label for="business-canvases-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="business-canvases-3" name="business_canvases" value="3">
+                                <label for="business-canvases-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="business-canvases-4" name="business_canvases" value="4">
+                                <label for="business-canvases-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="business-canvases-5" name="business_canvases" value="5">
+                                <label for="business-canvases-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Identifying growth opportunities:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="growth-opportunities-rating">
+                            <span id="growth-opportunities-rating" class="sr-only">Rate your ability to identify growth opportunities from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="growth-opportunities-1" name="growth_opportunities" value="1" required>
+                                <label for="growth-opportunities-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="growth-opportunities-2" name="growth_opportunities" value="2">
+                                <label for="growth-opportunities-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="growth-opportunities-3" name="growth_opportunities" value="3">
+                                <label for="growth-opportunities-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="growth-opportunities-4" name="growth_opportunities" value="4">
+                                <label for="growth-opportunities-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="growth-opportunities-5" name="growth_opportunities" value="5">
+                                <label for="growth-opportunities-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partnership & Outreach -->
+                <div class="category-section">
+                    <h3>🤝 Partnership & Outreach</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Reaching out to potential partners:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="reaching-partners-rating">
+                            <span id="reaching-partners-rating" class="sr-only">Rate your ability to reach out to potential partners from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="reaching-partners-1" name="reaching_partners" value="1" required>
+                                <label for="reaching-partners-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="reaching-partners-2" name="reaching_partners" value="2">
+                                <label for="reaching-partners-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="reaching-partners-3" name="reaching_partners" value="3">
+                                <label for="reaching-partners-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="reaching-partners-4" name="reaching_partners" value="4">
+                                <label for="reaching-partners-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="reaching-partners-5" name="reaching_partners" value="5">
+                                <label for="reaching-partners-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Crafting partnership pitches:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="partnership-pitches-rating">
+                            <span id="partnership-pitches-rating" class="sr-only">Rate your ability to craft partnership pitches from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="partnership-pitches-1" name="partnership_pitches" value="1" required>
+                                <label for="partnership-pitches-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partnership-pitches-2" name="partnership_pitches" value="2">
+                                <label for="partnership-pitches-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partnership-pitches-3" name="partnership_pitches" value="3">
+                                <label for="partnership-pitches-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partnership-pitches-4" name="partnership_pitches" value="4">
+                                <label for="partnership-pitches-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partnership-pitches-5" name="partnership_pitches" value="5">
+                                <label for="partnership-pitches-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Managing partner relationships:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="partner-relationships-rating">
+                            <span id="partner-relationships-rating" class="sr-only">Rate your ability to manage partner relationships from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="partner-relationships-1" name="partner_relationships" value="1" required>
+                                <label for="partner-relationships-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partner-relationships-2" name="partner_relationships" value="2">
+                                <label for="partner-relationships-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partner-relationships-3" name="partner_relationships" value="3">
+                                <label for="partner-relationships-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partner-relationships-4" name="partner_relationships" value="4">
+                                <label for="partner-relationships-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="partner-relationships-5" name="partner_relationships" value="5">
+                                <label for="partner-relationships-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communications & PR -->
+                <div class="category-section">
+                    <h3>📣 Communications & PR</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Writing for newsletters and social media:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="writing-media-rating">
+                            <span id="writing-media-rating" class="sr-only">Rate your ability to write for newsletters and social media from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="writing-media-1" name="writing_media" value="1" required>
+                                <label for="writing-media-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="writing-media-2" name="writing_media" value="2">
+                                <label for="writing-media-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="writing-media-3" name="writing_media" value="3">
+                                <label for="writing-media-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="writing-media-4" name="writing_media" value="4">
+                                <label for="writing-media-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="writing-media-5" name="writing_media" value="5">
+                                <label for="writing-media-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Public speaking / presenting the project:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="public-speaking-rating">
+                            <span id="public-speaking-rating" class="sr-only">Rate your ability for public speaking from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="public-speaking-1" name="public_speaking" value="1" required>
+                                <label for="public-speaking-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="public-speaking-2" name="public_speaking" value="2">
+                                <label for="public-speaking-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="public-speaking-3" name="public_speaking" value="3">
+                                <label for="public-speaking-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="public-speaking-4" name="public_speaking" value="4">
+                                <label for="public-speaking-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="public-speaking-5" name="public_speaking" value="5">
+                                <label for="public-speaking-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Managing public relations & storytelling:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="pr-storytelling-rating">
+                            <span id="pr-storytelling-rating" class="sr-only">Rate your ability to manage public relations and storytelling from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="pr-storytelling-1" name="pr_storytelling" value="1" required>
+                                <label for="pr-storytelling-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="pr-storytelling-2" name="pr_storytelling" value="2">
+                                <label for="pr-storytelling-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="pr-storytelling-3" name="pr_storytelling" value="3">
+                                <label for="pr-storytelling-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="pr-storytelling-4" name="pr_storytelling" value="4">
+                                <label for="pr-storytelling-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="pr-storytelling-5" name="pr_storytelling" value="5">
+                                <label for="pr-storytelling-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market & User Research -->
+                <div class="category-section">
+                    <h3>🧪 Market & User Research</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Conducting interviews or surveys:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="interviews-surveys-rating">
+                            <span id="interviews-surveys-rating" class="sr-only">Rate your ability to conduct interviews or surveys from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="interviews-surveys-1" name="interviews_surveys" value="1" required>
+                                <label for="interviews-surveys-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="interviews-surveys-2" name="interviews_surveys" value="2">
+                                <label for="interviews-surveys-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="interviews-surveys-3" name="interviews_surveys" value="3">
+                                <label for="interviews-surveys-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="interviews-surveys-4" name="interviews_surveys" value="4">
+                                <label for="interviews-surveys-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="interviews-surveys-5" name="interviews_surveys" value="5">
+                                <label for="interviews-surveys-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Analyzing qualitative data:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="qualitative-data-rating">
+                            <span id="qualitative-data-rating" class="sr-only">Rate your ability to analyze qualitative data from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="qualitative-data-1" name="qualitative_data" value="1" required>
+                                <label for="qualitative-data-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="qualitative-data-2" name="qualitative_data" value="2">
+                                <label for="qualitative-data-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="qualitative-data-3" name="qualitative_data" value="3">
+                                <label for="qualitative-data-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="qualitative-data-4" name="qualitative_data" value="4">
+                                <label for="qualitative-data-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="qualitative-data-5" name="qualitative_data" value="5">
+                                <label for="qualitative-data-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Identifying user personas & insights:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="user-personas-rating">
+                            <span id="user-personas-rating" class="sr-only">Rate your ability to identify user personas and insights from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="user-personas-1" name="user_personas" value="1" required>
+                                <label for="user-personas-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="user-personas-2" name="user_personas" value="2">
+                                <label for="user-personas-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="user-personas-3" name="user_personas" value="3">
+                                <label for="user-personas-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="user-personas-4" name="user_personas" value="4">
+                                <label for="user-personas-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="user-personas-5" name="user_personas" value="5">
+                                <label for="user-personas-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project & Operations Management -->
+                <div class="category-section">
+                    <h3>📋 Project & Operations Management</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Planning sprints or timelines:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="planning-sprints-rating">
+                            <span id="planning-sprints-rating" class="sr-only">Rate your ability to plan sprints or timelines from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="planning-sprints-1" name="planning_sprints" value="1" required>
+                                <label for="planning-sprints-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="planning-sprints-2" name="planning_sprints" value="2">
+                                <label for="planning-sprints-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="planning-sprints-3" name="planning_sprints" value="3">
+                                <label for="planning-sprints-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="planning-sprints-4" name="planning_sprints" value="4">
+                                <label for="planning-sprints-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="planning-sprints-5" name="planning_sprints" value="5">
+                                <label for="planning-sprints-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Coordinating across teams:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="coordinating-teams-rating">
+                            <span id="coordinating-teams-rating" class="sr-only">Rate your ability to coordinate across teams from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="coordinating-teams-1" name="coordinating_teams" value="1" required>
+                                <label for="coordinating-teams-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="coordinating-teams-2" name="coordinating_teams" value="2">
+                                <label for="coordinating-teams-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="coordinating-teams-3" name="coordinating_teams" value="3">
+                                <label for="coordinating-teams-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="coordinating-teams-4" name="coordinating_teams" value="4">
+                                <label for="coordinating-teams-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="coordinating-teams-5" name="coordinating_teams" value="5">
+                                <label for="coordinating-teams-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Managing documentation and workflows:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="documentation-workflows-rating">
+                            <span id="documentation-workflows-rating" class="sr-only">Rate your ability to manage documentation and workflows from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="documentation-workflows-1" name="documentation_workflows" value="1" required>
+                                <label for="documentation-workflows-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="documentation-workflows-2" name="documentation_workflows" value="2">
+                                <label for="documentation-workflows-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="documentation-workflows-3" name="documentation_workflows" value="3">
+                                <label for="documentation-workflows-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="documentation-workflows-4" name="documentation_workflows" value="4">
+                                <label for="documentation-workflows-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="documentation-workflows-5" name="documentation_workflows" value="5">
+                                <label for="documentation-workflows-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Funding & Finance -->
+                <div class="category-section">
+                    <h3>💰 Funding & Finance</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Identifying grants or funding sources:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="identifying-grants-rating">
+                            <span id="identifying-grants-rating" class="sr-only">Rate your ability to identify grants or funding sources from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="identifying-grants-1" name="identifying_grants" value="1" required>
+                                <label for="identifying-grants-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="identifying-grants-2" name="identifying_grants" value="2">
+                                <label for="identifying-grants-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="identifying-grants-3" name="identifying_grants" value="3">
+                                <label for="identifying-grants-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="identifying-grants-4" name="identifying_grants" value="4">
+                                <label for="identifying-grants-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="identifying-grants-5" name="identifying_grants" value="5">
+                                <label for="identifying-grants-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Writing funding proposals:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="funding-proposals-rating">
+                            <span id="funding-proposals-rating" class="sr-only">Rate your ability to write funding proposals from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="funding-proposals-1" name="funding_proposals" value="1" required>
+                                <label for="funding-proposals-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="funding-proposals-2" name="funding_proposals" value="2">
+                                <label for="funding-proposals-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="funding-proposals-3" name="funding_proposals" value="3">
+                                <label for="funding-proposals-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="funding-proposals-4" name="funding_proposals" value="4">
+                                <label for="funding-proposals-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="funding-proposals-5" name="funding_proposals" value="5">
+                                <label for="funding-proposals-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Budget tracking and reporting:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="budget-tracking-rating">
+                            <span id="budget-tracking-rating" class="sr-only">Rate your ability for budget tracking and reporting from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="budget-tracking-1" name="budget_tracking" value="1" required>
+                                <label for="budget-tracking-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="budget-tracking-2" name="budget_tracking" value="2">
+                                <label for="budget-tracking-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="budget-tracking-3" name="budget_tracking" value="3">
+                                <label for="budget-tracking-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="budget-tracking-4" name="budget_tracking" value="4">
+                                <label for="budget-tracking-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="budget-tracking-5" name="budget_tracking" value="5">
+                                <label for="budget-tracking-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Impact Analysis -->
+                <div class="category-section">
+                    <h3>📈 Data & Impact Analysis</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Tracking KPIs / social impact metrics:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="tracking-kpis-rating">
+                            <span id="tracking-kpis-rating" class="sr-only">Rate your ability to track KPIs and social impact metrics from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="tracking-kpis-1" name="tracking_kpis" value="1" required>
+                                <label for="tracking-kpis-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tracking-kpis-2" name="tracking_kpis" value="2">
+                                <label for="tracking-kpis-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tracking-kpis-3" name="tracking_kpis" value="3">
+                                <label for="tracking-kpis-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tracking-kpis-4" name="tracking_kpis" value="4">
+                                <label for="tracking-kpis-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="tracking-kpis-5" name="tracking_kpis" value="5">
+                                <label for="tracking-kpis-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Creating simple reports/dashboards:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="creating-reports-rating">
+                            <span id="creating-reports-rating" class="sr-only">Rate your ability to create simple reports and dashboards from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="creating-reports-1" name="creating_reports" value="1" required>
+                                <label for="creating-reports-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="creating-reports-2" name="creating_reports" value="2">
+                                <label for="creating-reports-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="creating-reports-3" name="creating_reports" value="3">
+                                <label for="creating-reports-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="creating-reports-4" name="creating_reports" value="4">
+                                <label for="creating-reports-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="creating-reports-5" name="creating_reports" value="5">
+                                <label for="creating-reports-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Understanding impact evaluation frameworks:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="impact-frameworks-rating">
+                            <span id="impact-frameworks-rating" class="sr-only">Rate your understanding of impact evaluation frameworks from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="impact-frameworks-1" name="impact_frameworks" value="1" required>
+                                <label for="impact-frameworks-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="impact-frameworks-2" name="impact_frameworks" value="2">
+                                <label for="impact-frameworks-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="impact-frameworks-3" name="impact_frameworks" value="3">
+                                <label for="impact-frameworks-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="impact-frameworks-4" name="impact_frameworks" value="4">
+                                <label for="impact-frameworks-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="impact-frameworks-5" name="impact_frameworks" value="5">
+                                <label for="impact-frameworks-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social & Environmental Responsibility -->
+                <div class="category-section">
+                    <h3>🌿 Social & Environmental Responsibility</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Applying inclusive design / accessibility principles:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="inclusive-design-rating">
+                            <span id="inclusive-design-rating" class="sr-only">Rate your ability to apply inclusive design and accessibility principles from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="inclusive-design-1" name="inclusive_design" value="1" required>
+                                <label for="inclusive-design-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="inclusive-design-2" name="inclusive_design" value="2">
+                                <label for="inclusive-design-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="inclusive-design-3" name="inclusive_design" value="3">
+                                <label for="inclusive-design-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="inclusive-design-4" name="inclusive_design" value="4">
+                                <label for="inclusive-design-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="inclusive-design-5" name="inclusive_design" value="5">
+                                <label for="inclusive-design-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Aligning work with social impact goals:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="social-impact-goals-rating">
+                            <span id="social-impact-goals-rating" class="sr-only">Rate your ability to align work with social impact goals from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="social-impact-goals-1" name="social_impact_goals" value="1" required>
+                                <label for="social-impact-goals-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-impact-goals-2" name="social_impact_goals" value="2">
+                                <label for="social-impact-goals-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-impact-goals-3" name="social_impact_goals" value="3">
+                                <label for="social-impact-goals-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-impact-goals-4" name="social_impact_goals" value="4">
+                                <label for="social-impact-goals-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="social-impact-goals-5" name="social_impact_goals" value="5">
+                                <label for="social-impact-goals-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Familiarity with UN SDGs / ESG indicators:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="un-sdgs-rating">
+                            <span id="un-sdgs-rating" class="sr-only">Rate your familiarity with UN SDGs and ESG indicators from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="un-sdgs-1" name="un_sdgs" value="1" required>
+                                <label for="un-sdgs-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="un-sdgs-2" name="un_sdgs" value="2">
+                                <label for="un-sdgs-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="un-sdgs-3" name="un_sdgs" value="3">
+                                <label for="un-sdgs-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="un-sdgs-4" name="un_sdgs" value="4">
+                                <label for="un-sdgs-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="un-sdgs-5" name="un_sdgs" value="5">
+                                <label for="un-sdgs-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product & Tech (non-technical) -->
+                <div class="category-section">
+                    <h3>📱 Product & Tech (non-technical)</h3>
+                    
+                    <div class="rating-group">
+                        <label class="form-label">Providing feedback on app design or user flows:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="app-design-feedback-rating">
+                            <span id="app-design-feedback-rating" class="sr-only">Rate your ability to provide feedback on app design or user flows from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="app-design-feedback-1" name="app_design_feedback" value="1" required>
+                                <label for="app-design-feedback-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="app-design-feedback-2" name="app_design_feedback" value="2">
+                                <label for="app-design-feedback-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="app-design-feedback-3" name="app_design_feedback" value="3">
+                                <label for="app-design-feedback-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="app-design-feedback-4" name="app_design_feedback" value="4">
+                                <label for="app-design-feedback-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="app-design-feedback-5" name="app_design_feedback" value="5">
+                                <label for="app-design-feedback-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Writing accessibility criteria:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="accessibility-criteria-rating">
+                            <span id="accessibility-criteria-rating" class="sr-only">Rate your ability to write accessibility criteria from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="accessibility-criteria-1" name="accessibility_criteria" value="1" required>
+                                <label for="accessibility-criteria-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="accessibility-criteria-2" name="accessibility_criteria" value="2">
+                                <label for="accessibility-criteria-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="accessibility-criteria-3" name="accessibility_criteria" value="3">
+                                <label for="accessibility-criteria-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="accessibility-criteria-4" name="accessibility_criteria" value="4">
+                                <label for="accessibility-criteria-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="accessibility-criteria-5" name="accessibility_criteria" value="5">
+                                <label for="accessibility-criteria-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating-group">
+                        <label class="form-label">Coordinating with dev/design teams:</label>
+                        <div class="rating-scale" role="group" aria-labelledby="dev-design-teams-rating">
+                            <span id="dev-design-teams-rating" class="sr-only">Rate your ability to coordinate with dev/design teams from 1 to 5</span>
+                            <div class="rating-option">
+                                <input type="radio" id="dev-design-teams-1" name="dev_design_teams" value="1" required>
+                                <label for="dev-design-teams-1">1</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="dev-design-teams-2" name="dev_design_teams" value="2">
+                                <label for="dev-design-teams-2">2</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="dev-design-teams-3" name="dev_design_teams" value="3">
+                                <label for="dev-design-teams-3">3</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="dev-design-teams-4" name="dev_design_teams" value="4">
+                                <label for="dev-design-teams-4">4</label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="dev-design-teams-5" name="dev_design_teams" value="5">
+                                <label for="dev-design-teams-5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Growth & Learning Goals -->
+            <section class="survey-section" id="growth">
+                <div class="section-header">
+                    <img src="assets/images/heart-icon.png" alt="Cherish Heart Icon" class="heart-icon">
+                    <h2>Growth & Learning Goals</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="growth-areas" class="form-label">Which 2–3 areas from above are you most eager to grow in? Why?</label>
+                    <textarea id="growth-areas" name="growth_areas" class="form-control" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="support-needed" class="form-label">What kind of support would help you most?</label>
+                    <p class="instructions">(Choose up to 2)</p>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="support-mentorship" name="support[]" value="1:1 mentorship">
+                            <label for="support-mentorship">1:1 mentorship</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="support-resources" name="support[]" value="Learning resources (articles, videos)">
+                            <label for="support-resources">Learning resources (articles, videos)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="support-feedback" name="support[]" value="Regular feedback on work">
+                            <label for="support-feedback">Regular feedback on work</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="support-shadowing" name="support[]" value="Shadowing opportunities">
+                            <label for="support-shadowing">Shadowing opportunities</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="support-workshops" name="support[]" value="Group workshops/training">
+                            <label for="support-workshops">Group workshops/training</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="specific-skills" class="form-label">Are there any specific skills or tools you'd like to learn (e.g., Airtable, Notion, Canva, Miro, grant writing, etc.)?</label>
+                    <textarea id="specific-skills" name="specific_skills" class="form-control" rows="3"></textarea>
+                </div>
+            </section>
+
+            <!-- Section 4: Communication & Motivation -->
+            <section class="survey-section" id="communication">
+                <div class="section-header">
+                    <img src="assets/images/heart-icon.png" alt="Cherish Heart Icon" class="heart-icon">
+                    <h2>Communication & Motivation</h2>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">How do you prefer to communicate? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="comm-signal" name="communication[]" value="Signal messages">
+                            <label for="comm-signal">Signal messages</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="comm-email" name="communication[]" value="Email">
+                            <label for="comm-email">Email</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="comm-video" name="communication[]" value="Video calls">
+                            <label for="comm-video">Video calls</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="comm-voice" name="communication[]" value="Voice calls">
+                            <label for="comm-voice">Voice calls</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="comm-comments" name="communication[]" value="Comments in shared docs">
+                            <label for="comm-comments">Comments in shared docs</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comm-other" class="form-label">Other:</label>
+                    <input type="text" id="comm-other" name="communication_other" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-frequency" class="form-label">How often would you like to receive feedback or recognition for your contributions?</label>
+                    <select id="feedback-frequency" name="feedback_frequency" class="form-control">
+                        <option value="">Please select</option>
+                        <option value="After each task">After each task</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Bi-weekly">Bi-weekly</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Every 3 months">Every 3 months</option>
+                        <option value="Only when there's an issue">Only when there's an issue</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">What motivates you to stay engaged? (Choose top 2)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motivation-impact" name="motivation[]" value="Seeing the impact of my work">
+                            <label for="motivation-impact">Seeing the impact of my work</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motivation-learning" name="motivation[]" value="Learning new skills">
+                            <label for="motivation-learning">Learning new skills</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motivation-recognition" name="motivation[]" value="Recognition for contributions">
+                            <label for="motivation-recognition">Recognition for contributions</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motivation-community" name="motivation[]" value="Being part of a community">
+                            <label for="motivation-community">Being part of a community</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motivation-autonomy" name="motivation[]" value="Having autonomy in my work">
+                            <label for="motivation-autonomy">Having autonomy in my work</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="motivation-challenges" name="motivation[]" value="Solving challenging problems">
+                            <label for="motivation-challenges">Solving challenging problems</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="team-dynamic" class="form-label">What kind of team dynamic helps you do your best work?</label>
+                    <textarea id="team-dynamic" name="team_dynamic" class="form-control" rows="3"></textarea>
+                </div>
+            </section>
+
+            <!-- Section 5: Role Boundaries & Preferences -->
+            <section class="survey-section" id="boundaries">
+                <div class="section-header">
+                    <img src="assets/images/heart-icon.png" alt="Cherish Heart Icon" class="heart-icon">
+                    <h2>Role Boundaries & Preferences</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-preferences" class="form-label">Are there any types of tasks or responsibilities you would prefer not to do or absolutely do not want to do?</label>
+                    <p class="instructions">(e.g., cold emailing, budgeting, public speaking, data entry, social media management, etc.)</p>
+                    <textarea id="task-preferences" name="task_preferences" class="form-control" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-comments" class="form-label">Any additional comments, concerns, or ideas?</label>
+                    <textarea id="additional-comments" name="additional_comments" class="form-control" rows="4"></textarea>
+                </div>
+            </section>
+
+            <!-- Submission & Next Steps -->
+            <section class="survey-section" id="submission">
+                <div class="section-header">
+                    <img src="assets/images/heart-icon.png" alt="Cherish Heart Icon" class="heart-icon">
+                    <h2>Submission & Next Steps</h2>
+                </div>
+
+                <div class="submission-info">
+                    <p>Your responses will help us co-design your role and task areas.</p>
+                    <p>Expect to review a role description and working agreement draft in the coming weeks.</p>
+                    <p>We'll check in monthly to refine based on how you're feeling and progressing.</p>
+                </div>
+
+                <div class="form-group submit-group">
+                    <button type="submit" class="submit-button">Submit Survey</button>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cherish - Your Advantage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

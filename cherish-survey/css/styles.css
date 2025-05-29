@@ -1,0 +1,277 @@
+/* 
+ * Cherish Engagement Survey Styles
+ * Based on branding guidelines from branding_notes.md
+ */
+
+/* Base Styles and Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+  color: #4a4a9c; /* Purple/blue tone from the logo */
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #4a4a9c;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #5d5db1;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.instructions {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Form Styles */
+.survey-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e6e6fa; /* Light purple */
+  padding-bottom: 0.5rem;
+}
+
+.heart-icon {
+  width: 60px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+textarea.form-control {
+  min-height: 100px;
+}
+
+/* Checkbox and Radio Styles */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.rating-group {
+  margin-bottom: 1.5rem;
+}
+
+.rating-scale {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin-top: 0.5rem;
+}
+
+.rating-option {
+  text-align: center;
+}
+
+.rating-option input[type="radio"] {
+  margin-bottom: 0.25rem;
+}
+
+.priority-select {
+  margin-left: 0.5rem;
+  padding: 0.25rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Category Section Styles */
+.category-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.category-section:last-child {
+  border-bottom: none;
+}
+
+/* Submit Button */
+.submit-group {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.submit-button {
+  background-color: #4a4a9c; /* Purple/blue from logo */
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3a3a7c;
+}
+
+/* Submission Info Section */
+.submission-info {
+  background-color: #f0f0ff; /* Light purple background */
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.submission-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  background-color: #f0f0ff; /* Light purple background */
+  color: #666;
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  .survey-section {
+    padding: 1.5rem;
+  }
+  
+  .checkbox-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .rating-scale {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+ 
+  
+  .survey-section {
+    padding: 1rem;
+  }
+}

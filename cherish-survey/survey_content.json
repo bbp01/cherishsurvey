@@ -1,0 +1,298 @@
+{
+  "title": "CHERISH - Your Advantage - Engagement Survey",
+  "sections": [
+    {
+      "title": "Your Expectations",
+      "questions": [
+        {
+          "text": "What do you hope to gain from working on Cherish?",
+          "type": "multiple_choice",
+          "instructions": "(Select all that apply and highlight the top 3 in order of importance)",
+          "options": [
+            "Real-world project experience",
+            "Resume-worthy achievements",
+            "Impact on vulnerable communities",
+            "Skill development",
+            "Mentorship/networking",
+            "Entrepreneurial learning",
+            "Future remuneration ($)"
+          ]
+        },
+        {
+          "text": "Other: ___________",
+          "type": "text"
+        },
+        {
+          "text": "What title or role would you ideally list on your resume from this experience?\n (e.g., Business Development Coordinator, Accessibility Analyst, Project Manager, etc.)",
+          "type": "text"
+        },
+        {
+          "text": "What are the accomplishments you\u2019d love to highlight on your resume from this experience?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "title": "Functional Confidence & Autonomy",
+      "questions": [
+        {
+          "text": "For each function below, rate your current level of confidence and ability to work independently (1 = not at all, 5 = expert / no supervision needed)",
+          "type": "text"
+        },
+        {
+          "category": "\ud83d\udcca Business Strategy & Planning",
+          "text": "Understanding social enterprise models :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcca Business Strategy & Planning",
+          "text": "Working with business canvases and strategy documents :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcca Business Strategy & Planning",
+          "text": "Identifying growth opportunities :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83e\udd1d Partnership & Outreach",
+          "text": "Reaching out to potential partners :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83e\udd1d Partnership & Outreach",
+          "text": "Crafting partnership pitches :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83e\udd1d Partnership & Outreach",
+          "text": "Managing partner relationships :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udce3 Communications & PR",
+          "text": "Writing for newsletters and social media :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udce3 Communications & PR",
+          "text": "Public speaking / presenting the project :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udce3 Communications & PR",
+          "text": "Managing public relations & storytelling :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83e\uddea Market & User Research",
+          "text": "Conducting interviews or surveys :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83e\uddea Market & User Research",
+          "text": "Analyzing qualitative data :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83e\uddea Market & User Research",
+          "text": "Identifying user personas & insights :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udccb Project & Operations Management",
+          "text": "Planning sprints or timelines :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udccb Project & Operations Management",
+          "text": "Coordinating across teams :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udccb Project & Operations Management",
+          "text": "Managing documentation and workflows :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcb0 Funding & Finance",
+          "text": "Identifying grants or funding sources :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcb0 Funding & Finance",
+          "text": "Writing funding proposals :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcb0 Funding & Finance",
+          "text": "Budget tracking and reporting :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcc8 Data & Impact Analysis",
+          "text": "Tracking KPIs / social impact metrics :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcc8 Data & Impact Analysis",
+          "text": "Creating simple reports/dashboards :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcc8 Data & Impact Analysis",
+          "text": "Understanding impact evaluation frameworks :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83c\udf3f Social & Environmental Responsibility",
+          "text": "Applying inclusive design / accessibility principles :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83c\udf3f Social & Environmental Responsibility",
+          "text": "Aligning work with social impact goals :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83c\udf3f Social & Environmental Responsibility",
+          "text": "Familiarity with UN SDGs / ESG indicators :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcf1 Product & Tech (non-technical)",
+          "text": "Providing feedback on app design or user flows :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcf1 Product & Tech (non-technical)",
+          "text": "Writing accessibility criteria :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        },
+        {
+          "category": "\ud83d\udcf1 Product & Tech (non-technical)",
+          "text": "Coordinating with dev/design teams :",
+          "type": "rating",
+          "scale": "1-5",
+          "scale_description": "1 = not at all, 5 = expert / no supervision needed"
+        }
+      ]
+    },
+    {
+      "title": "Growth & Learning Goals",
+      "questions": [
+        {
+          "text": "Which 2\u20133 areas from above are you most eager to grow in? Why?",
+          "type": "text"
+        },
+        {
+          "text": "What kind of support would help you most?\n (Choose up to 2)",
+          "type": "text"
+        },
+        {
+          "text": "Are there any specific skills or tools you\u2019d like to learn (e.g., Airtable, Notion, Canva, Miro, grant writing, etc.)?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "title": "Communication & Motivation",
+      "questions": [
+        {
+          "text": "How do you prefer to communicate? (Select all that apply)",
+          "type": "text"
+        },
+        {
+          "text": "Other: ___________",
+          "type": "text"
+        },
+        {
+          "text": "How often would you like to receive feedback or recognition for your contributions?",
+          "type": "text"
+        },
+        {
+          "text": "What motivates you to stay engaged? (Choose top 2)",
+          "type": "text"
+        },
+        {
+          "text": "What kind of team dynamic helps you do your best work?",
+          "type": "text"
+        },
+        {
+          "text": "Other: _____________\n\n\ud83d\udd39 Section 5: Role Boundaries & Preferences",
+          "type": "text"
+        },
+        {
+          "text": "Are there any types of tasks or responsibilities you would prefer not to do or absolutely do not want to do?\n (e.g., cold emailing, budgeting, public speaking, data entry, social media management, etc.)",
+          "type": "text"
+        },
+        {
+          "text": "Any additional comments, concerns, or ideas?",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "name_field": "Name :",
+  "submission_info": {
+    "title": "Submission & Next Steps",
+    "content": [
+      "\ud83d\udce5 Submission & Next Steps",
+      "Your responses will help us co-design your role and task areas.",
+      "Expect to review a role description and working agreement draft in the coming weeks.",
+      "We\u2019ll check in monthly to refine based on how you're feeling and progressing."
+    ]
+  }
+}
