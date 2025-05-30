@@ -19,9 +19,10 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -79,11 +80,11 @@ p {
 }
 
 #logo {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  max-width: 400px; /* Optional: prevents it from getting too big on large screens */
   display: block;
   margin: 0 auto;
-  width: auto;
 }
 
 /* Form Styles */
